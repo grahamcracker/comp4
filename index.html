@@ -6,15 +6,108 @@
     <title>WI :: Citizen Registration</title>
     <link rel="stylesheet" href="stylesheets/index.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="icon"
+      type="image/png"
+      href="images/wid_favicon.png">
   </head>
   <body>
 
-    <div class="row">
-      <div id="logo-container">
-        <img src="images/WID_LOGO.png" />
-        <hr/>
-        <h2>Citizen Registration</h2>
+    <div id="container">
+
+      <div class="row">
+        <div id="logo-container">
+          <img src="images/WID_LOGO.png" />
+          <h5>PROTECTING YOUR FREEDOM&trade;</h5>
+        </div>
       </div>
+
+      <div id="main-container">
+        <div id="main">
+          <div id="form-container">
+            <h2><img src="images/REPORT.png" id="report" /> UCG Citizen Registration</h2>
+
+            <p class="lead">
+              All residents of the Unified Corporate Government (<strong>UCG</strong>) are required
+              to register electronically via the below form.
+              <em>Dissedents will be prosecuted to the fullest extent of corporate law.</em>
+            </p>
+
+            <form data-abide>
+
+              <fieldset>
+
+                <legend>I. CONTACT INFORMATION </legend>
+
+                <label>
+                  Full Name
+                  <small class="error">Names are required.</small>
+                  <input type="text" required placeholder="Aiden Tom Gillen" />
+                </label>
+
+                <label>
+                  Civilian Email Address
+                  <small class="error">An email address is required.</small>
+                  <input type="email" required placeholder="gillen@widmore.gov">
+                </label>
+
+                <label>
+                  Civilian Top Level Domain (<strong>CTLD</strong>)
+                  <small class="error">A domain is required.</small>
+                  <input type="text" pattern="domain" required placeholder="gillen.link">
+                </label>
+
+              </fieldset>
+
+              <fieldset>
+
+                <legend>II. Widmore Identification Alias (<strong>WIDA</strong>)</legend>
+
+                <p>All citizens are required to submit their Widmore Identification Alias for tracking and security purposes.
+                  The <em>zone code</em> and <em>division</em> can be found on Widmore Electronic Visa and/or employment cards.
+                  Your <em>ID hash</em> can be found by pressing <strong>WID</strong> on your Widmore Tablet.
+                </p>
+
+                <img src="images/WID_ID.png" /><br/><br/>
+
+                <p>Please confirm that the above WID is correct.</p>
+
+                <strong id="confirmed">CONFIRMED</strong>
+                <div class="switch">
+                  <input id="exampleCheckboxSwitch" type="checkbox">
+                  <label for="exampleCheckboxSwitch" id="confirm"></label>
+                </div>
+
+              </fieldset>
+
+              <input type="submit" class="button" />
+
+              <a href="javascript:void(0)" data-reveal-id="helpModal" class="button secondary">Assistance</a>
+
+              <div id="helpModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h2><img src="images/WID_LOGO.png" width="200px"/> Widmore Assistance</h2><br/>
+                <p class="lead">Please contact Widmore Industries - Digital Communications Division (<strong>DCD</strong>):</p>
+                <p class="lead"><strong>1.999.WID.HELP</strong> :: <strong>dcd@widmore.gov</strong></p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <img src="images/CONSOLE.png" width="160px" height="76px"/>
+
+          &copy; 2015 Widmore Industries, All Rights Reserved.
+          <p>
+            Provided under the express authorization of the National Security Agency (NSA) of the
+            Unified Corporate Government of the United States of America.
+          </p>
+        </div>
+      </footer>
+
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

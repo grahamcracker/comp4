@@ -1,0 +1,12 @@
+@import "app";
+
+#logo-container{
+  @include grid-column(6, $offset: 3);
+  text-align: center;
+  img{
+    margin-top: 10%;
+  }
+  h2{
+    margin-top: .5em;
+  }
+}

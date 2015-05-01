@@ -69,12 +69,45 @@
 
                 <img src="images/WID_ID.png" /><br/><br/>
 
-                <p>Please confirm that the above WID is correct.</p>
+                <p>Your WID has been automatically detected. Please confirm that the above WID is correct.</p>
 
-                <strong id="confirmed">CONFIRMED</strong>
+                <strong id="confirmed"></strong>
                 <div class="switch">
                   <input id="exampleCheckboxSwitch" type="checkbox">
                   <label for="exampleCheckboxSwitch" id="confirm"></label>
+                </div>
+
+              </fieldset>
+
+              <fieldset>
+
+                <legend>III. Miniwatch Surveillance Key</legend>
+
+                <h5>The Ministry of Watching requires that all
+                  citizens surrender a unique key for surveillance.
+                </h5>
+
+                <img src="images/miniwatch.png" style="width: 20%;margin-bottom: 1em;" />
+
+                <div style="width: 50%">
+                  <label><p>Please select your age:</p>
+                    <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;start: 10; end: 120;initial:42;">
+                      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                      <span class="range-slider-active-segment"></span>
+                    </div>
+                    <strong><span id="sliderOutput3"></span></strong>
+                  </label>
+                </div>
+
+                <p>Please generate your surveillance key:</p>
+
+                <div class="row collapse prefix-round">
+                  <div class="small-3 columns">
+                    <a href="javascript:void(0)" class="button prefix" id="generateKey">Generate Key</a>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Key" id="key" style="width: 10em;">
+                  </div>
                 </div>
 
               </fieldset>

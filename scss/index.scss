@@ -43,6 +43,9 @@ body{
       #form-container{
         margin-top: 2.5em;
         @include grid-column(8, $offset: 2);
+        h2.red{
+          color: green;
+        }
         img#report{
           width: 10%;
           margin-right: .5em;
